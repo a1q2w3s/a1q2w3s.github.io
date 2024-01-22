@@ -11,6 +11,7 @@
 		$header = $('#header'),
 		$footer = $('#footer'),
 		$main = $('#main'),
+		$nav = $('#nav2'),
 		settings = {
 
 			// Parallax background effect?
@@ -92,6 +93,12 @@
 				});
 
 			}
+
+	// Scrolly.
+		$('#nav2 a, .scrolly').scrolly({
+			speed: 1000,
+			offset: function() { return $nav.height(); }
+		});
 
 	// Main Sections: Two.
 
